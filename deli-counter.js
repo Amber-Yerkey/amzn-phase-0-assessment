@@ -1,5 +1,29 @@
 // 1. Write your functions here
 
+function line(array){
+    if(array.length !== 0){
+      console.log(`The line is currently: `)
+        array.forEach(function(element){
+          console.log(`${array.indexOf(element) + 1}. ${element}`)
+        })
+    } else {
+      console.log("The line is currently empty")
+    }
+  }
+
+  function takeANumber(array, newName){
+    array.push(newName)
+    console.log(`Welcome, ${newName}. You are number ${array.indexOf(newName) + 1} in line.`)
+  }
+
+
+  function nowServing(array){
+    if(array.length !== 0){
+        console.log(`Currently serving ${array[0]}`)
+        array.shift()
+    } else {
+        console.log("There is nobody waiting to be served!")}
+  }
 
 // 2. Example Usage
 
